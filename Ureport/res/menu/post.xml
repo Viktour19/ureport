@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    	 <item
+		        android:id="@+id/action_dropdown"
+		        android:showAsAction="always"
+		        android:icon="@drawable/ic_drop"
+		        android:title="@string/feeds">
+		<menu >  
+			     <item
+				        android:id="@+id/menu_feeds"
+				        android:showAsAction="never"
+				        android:icon="@drawable/allfeeds_ic"
+				        android:title="@string/feeds"/>
+		   			  <item
+		                android:id="@+id/action_post"
+		                android:icon="@drawable/report_ic"
+		                android:menuCategory="container"
+		                android:orderInCategory="1"
+		                android:showAsAction="never"
+		                android:title="Report">
+		            </item>
+		            <item
+		                android:id="@+id/menu_profile"
+		                android:icon="@drawable/profile_ic"
+		                android:menuCategory="container"
+		                android:orderInCategory="2"
+		                android:showAsAction="never"
+		                android:title="Profile">
+		            </item>
+		</menu>
+</item>
+</menu>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity$DummySectionFragment" >
+<ListView 
+     
+    android:id="@+id/list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity$DummySectionFragment" >
+
+</ListView>
+       <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+	 android:id="@+id/showmore">
+
+    <com.informaticsproject.ureport.MyTextView
+        android:id="@+id/myTextView1"
+        android:background="@drawable/menu_dropdown_panel_ureportstyle"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:textColor="#014D5F"
+        android:text="Show More" />
+
+</LinearLayout>
+</LinearLayout>

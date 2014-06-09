@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/row"
+        android:padding="15dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp" >
+
+                <ImageView
+                    android:id="@+id/icontype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/studenticon" />
+            </TableRow>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TableRow
+                    android:id="@+id/tableRow4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1" >
+
+                    <TableRow
+                        android:id="@+id/tableRow5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7" >
+
+                        <com.informaticsproject.ureport.MyTextView
+                            android:id="@+id/txtUreportusername"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:text="Anonymous"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <RelativeLayout
+                        android:id="@+id/RelativeLayout1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:gravity="center_horizontal|center_vertical" >
+
+                        <ImageView
+                            android:id="@+id/up"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/upvoteicon" />
+
+                        <com.informaticsproject.ureport.MyTextView
+                            android:id="@+id/txtUreportUpvote"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignRight="@+id/up"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="3dp"
+                            android:text="233 Up-votes"
+                            android:textColor="#111"
+                            android:textSize="8sp" />
+
+                    </RelativeLayout>
+                </TableRow>
+
+                <com.informaticsproject.ureport.MyTextView
+                    android:id="@+id/txtUreport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="MyTextView"
+                    android:textColor="#616365" />
+
+                <RelativeLayout
+                    android:id="@+id/tableRow6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" 
+                   
+                    >
+
+                    <com.informaticsproject.ureport.MyTextView
+                        android:id="@+id/txtUreportDateTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="12 Mar 2014"
+                        android:layout_weight="0"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#878BCD" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true" >
+
+                        <ImageView
+                            android:id="@+id/imgdoc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/mediaicon" />
+
+                        <ImageView
+                            android:id="@+id/imgmedia"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/docicon" />
+                       
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </TableRow>
+
+</LinearLayout>
